@@ -1,0 +1,493 @@
+/* global selector */
+*{
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+     font-family: "Outfit", sans-serif;
+     scroll-behavior: smooth;
+
+}
+/* tag selector */
+body{
+    /* background-color: lightgreen; */
+    width: 100%;
+    min-height: 100vh;
+  
+
+}
+
+nav{
+    background-color: rgb(0, 44, 119);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: backgroundColorChanger;
+    animation-duration: 5s;
+}
+a{
+    text-decoration:none;
+    color:white;
+    margin-right: 20px;
+}
+a:hover{
+    cursor: pointer;
+    color: rgb(236, 236, 16);
+}
+/* id selector */
+#logo{
+    width:60px;
+    height:60px;
+    object-fit: cover;
+    margin-right:10px;
+
+}
+/* class selector */
+.homeLink{
+    color: rgb(236, 236, 16);
+}
+.headertext{
+    color:white;
+    font-size:2rem;
+    font-weight: 700;
+    margin-right: 40px;
+  
+}
+button{
+    margin-right: 20px;
+    padding:10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: rgb(236, 236, 16);
+}
+
+
+
+
+.logo-group{
+    display: flex;
+    align-items: center;
+}
+.link-group{
+    display: flex;
+    align-items: center;
+}
+.button-group{
+    display: flex;
+    align-items: center;
+}
+
+
+/* main */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+.school-image{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.hero-right{
+    margin-left: 100px;
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    width: 50%;
+}
+
+.hero-paragraph{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+h1{
+    color: rgb(0, 44, 119);
+}
+.register-button{
+    background-color: rgb(0, 44, 119);
+    color: white;
+}
+.register-button:hover{
+    background-color: rgb(4, 68, 179);
+}
+.learn-button{
+    background: transparent;
+    border: 1px solid rgb(0, 44, 119);
+}
+
+
+/* form */
+ .form-section h2{
+    text-align: center;
+    color: rgb(0, 44, 119);
+    margin-bottom: 40px;
+    margin-top: 40px;
+ }
+.form{
+    border: 1px solid rgb(0, 44, 119);
+    background-color: lightgray;
+    width: 50%;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+input{
+    height:40px;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 44, 119);
+    padding: 10px;
+}
+select{
+    height:40px;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 44, 119);
+    padding: 10px;
+
+}
+textarea{
+    height:40px;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 44, 119);
+    padding: 10px;
+
+}
+
+.radio-input{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+.radio-input-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.checkbox-input-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.submit-button{
+    background-color: rgb(0, 44, 119);
+    color: white;
+}
+
+
+
+/* section for gallerry */
+.img-group{
+    width:80%;
+    margin: auto;
+    
+}
+
+.gallery h2{
+    
+    color: rgb(0, 44, 119);
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.gallery-img{
+    height:160px;
+    width:33%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.gallery-img:hover{
+    transform:scale(1.1);
+}
+
+
+
+
+.teachers-image{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.image-container{
+    background-color: lightblue;
+    width: 300px;
+    position: relative;
+}
+.floating-text{
+    position:absolute;
+    bottom: 20px;
+    left:20px;
+    z-index:999;
+    color: white;
+    background: linear-gradient(to top left, red, orange, green,purple, orange);
+    padding: 10px;
+    border-radius: 10px;
+}
+.image-container-2{
+    position:relative;
+    width: 300px;
+    
+}
+.students-image-1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -20px;
+    left:0;
+    border-radius: 50%;
+}
+
+.students-image-2{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.students-image-3{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 1px 1px 50px red;
+    z-index:99;
+}
+.green-container{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:  10px;
+    right: -20px;
+}
+
+.text-container{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(4, 68, 179);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+
+.overall-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items:flex-start;
+    flex-wrap: wrap;
+
+}
+
+.about-us{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.about-us h2{
+    color: rgb(0, 44, 119);
+    
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+
+.card{
+    background: linear-gradient(to top, rgb(4, 4, 72), rgb(8, 8, 123),  rgb(1, 1, 33));
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.img-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+     
+   
+}
+.profile-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.username{
+    color: white;
+}
+.profile-wrapper{
+    height: 75%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon-wrapper{
+    display: flex;
+    justify-content: end;
+   
+}
+.cards-wrapper{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.icon-circle{
+    background-color: rgba(0, 0, 0, 0.245);
+    border-radius: 50%;
+    padding:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.icon-circle:hover{
+    opacity: .4;
+}
+.second-card{
+    background: linear-gradient(to top, rgb(119, 0, 44), rgb(179, 4, 68),  rgb(33, 1, 1));
+}
+.third-card{
+    background: linear-gradient(to top, rgb(119, 119, 0), rgb(179, 179, 4),  rgb(33, 33, 1));
+}
+.fourth-card{
+    background: linear-gradient(to top, rgb(0, 119, 44), rgb(4, 179, 68),  rgb(1, 33, 1));
+}
+.fifth-card{
+    background: linear-gradient(to top, rgb(0, 44, 119), rgb(4, 68, 179),  rgb(1, 1, 33));
+}
+.sixth-card{
+    background: linear-gradient(to top, rgb(119, 0, 119), rgb(179, 4, 179),  rgb(33, 1, 33));
+}
+
+.hero-left{
+    /* animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-delay:4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in; */
+      animation: myAnimation 3s linear infinite; 
+      width: 50%;
+}
+#menu-icon{
+    width: 30px;
+    height: 30px;
+    display:none;
+}
+
+
+@media  screen and (max-width: 1024px) {
+    #logo{
+        width: 30px;
+        height:30px;
+        margin-right: 0;
+    }
+    .headertext{
+        font-size: 1rem;
+    }
+    .link-group{
+        display: none;
+    }
+    .button-group{
+        display:none;
+    }
+    #menu-icon{
+        display:block;
+        cursor:pointer;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .hero{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+@keyframes slideInLeft {
+
+    from{
+        transform:translateX(-100%);
+    }
+
+    to{
+        transform:translateX(0);
+
+    }
+    
+}
+@keyframes slideInRight {
+
+    from{
+        transform:translateX(100%);
+    }
+
+    to{
+        transform:translateX(0);
+
+    }
+}
+@keyframes backgroundColorChanger {
+    0%{
+        background-color: red;
+
+    }
+
+    25%{
+        background-color: rgb(0, 44, 119);
+    }
+    50%{
+        background-color: green;
+    }
+    75%{
+        background-color: orange;
+    }
+    100%{
+        background-color: red;
+    }
+    
+}
